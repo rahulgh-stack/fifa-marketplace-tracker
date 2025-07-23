@@ -742,10 +742,14 @@ def create_website():
 """
     
     # Save the HTML file
+    with open('index.html', 'w', encoding='utf-8') as f:
+        f.write(html_content)
+    
+    # Also save as the original filename for backwards compatibility
     with open('fifa_world_cup_2026_marketplace.html', 'w', encoding='utf-8') as f:
         f.write(html_content)
     
-    print(f"✅ Website created: fifa_world_cup_2026_marketplace.html")
+    print(f"✅ Website created: index.html (GitHub Pages ready)")
     print(f"📊 {len(matches)} matches processed")
     print(f"💰 Price range: ${min(m['lowest_price'] for m in matches if m['lowest_price'] > 0):,.0f} - ${max(m['highest_price'] for m in matches):,.0f}")
 
