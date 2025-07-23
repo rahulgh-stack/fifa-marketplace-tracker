@@ -296,7 +296,13 @@ def create_website():
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px;
+        }}
+        
+        @media (max-width: 480px) {{
+            body {{
+                padding: 5px;
+            }}
         }}
         
         .container {{
@@ -306,6 +312,19 @@ def create_website():
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+        }}
+        
+        @media (max-width: 768px) {{
+            .container {{
+                border-radius: 15px;
+            }}
+        }}
+        
+        @media (max-width: 480px) {{
+            .container {{
+                border-radius: 10px;
+                margin: 0 5px;
+            }}
         }}
         
         .header {{
@@ -419,30 +438,45 @@ def create_website():
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            min-width: 800px;
+        }}
+        
+        @media (min-width: 769px) {{
+            table {{
+                min-width: 800px;
+            }}
         }}
         
         @media (max-width: 768px) {{
             table {{
-                min-width: 700px;
-                font-size: 0.9rem;
+                font-size: 0.85rem;
+                border-radius: 10px;
+            }}
+            
+            /* Hide less important columns on tablet */
+            .hide-tablet {{
+                display: none;
             }}
         }}
         
         @media (max-width: 480px) {{
             table {{
-                min-width: 600px;
-                font-size: 0.8rem;
+                font-size: 0.75rem;
+                border-radius: 8px;
+            }}
+            
+            /* Hide more columns on mobile */
+            .hide-mobile {{
+                display: none;
             }}
         }}
         
         th {{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 20px 15px;
+            padding: 15px 10px;
             font-weight: 600;
             text-align: left;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             cursor: pointer;
@@ -452,16 +486,17 @@ def create_website():
         
         @media (max-width: 768px) {{
             th {{
-                padding: 12px 8px;
-                font-size: 0.8rem;
+                padding: 10px 6px;
+                font-size: 0.75rem;
                 letter-spacing: 0.3px;
             }}
         }}
         
         @media (max-width: 480px) {{
             th {{
-                padding: 10px 6px;
-                font-size: 0.7rem;
+                padding: 8px 4px;
+                font-size: 0.65rem;
+                letter-spacing: 0.2px;
             }}
         }}
         
@@ -491,22 +526,26 @@ def create_website():
         }}
         
         td {{
-            padding: 15px;
+            padding: 12px 8px;
             border-bottom: 1px solid #eee;
             transition: background-color 0.3s ease;
+            word-wrap: break-word;
+            max-width: 150px;
         }}
         
         @media (max-width: 768px) {{
             td {{
-                padding: 10px 8px;
-                font-size: 0.9rem;
+                padding: 8px 5px;
+                font-size: 0.85rem;
+                max-width: 120px;
             }}
         }}
         
         @media (max-width: 480px) {{
             td {{
-                padding: 8px 6px;
-                font-size: 0.8rem;
+                padding: 6px 3px;
+                font-size: 0.75rem;
+                max-width: 100px;
             }}
         }}
         
@@ -541,16 +580,34 @@ def create_website():
         .marketplace-link {{
             color: #007bff;
             text-decoration: none;
-            padding: 8px 15px;
+            padding: 6px 12px;
             background: #e3f2fd;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
             transition: all 0.3s ease;
+            display: inline-block;
+            white-space: nowrap;
         }}
         
         .marketplace-link:hover {{
             background: #007bff;
             color: white;
+        }}
+        
+        @media (max-width: 768px) {{
+            .marketplace-link {{
+                padding: 4px 8px;
+                font-size: 0.7rem;
+                border-radius: 10px;
+            }}
+        }}
+        
+        @media (max-width: 480px) {{
+            .marketplace-link {{
+                padding: 3px 6px;
+                font-size: 0.65rem;
+                border-radius: 8px;
+            }}
         }}
         
         .date {{
@@ -580,6 +637,20 @@ def create_website():
             color: #2a5298;
             text-transform: uppercase;
             font-size: 0.9rem;
+        }}
+        
+        /* Mobile-specific venue info */
+        .venue-mobile-info {{
+            display: none;
+            font-size: 0.7rem;
+            color: #666;
+            margin-top: 2px;
+        }}
+        
+        @media (max-width: 480px) {{
+            .venue-mobile-info {{
+                display: block;
+            }}
         }}
         
         .footer {{
@@ -637,15 +708,15 @@ def create_website():
                 <thead>
                     <tr>
                         <th class="sortable" onclick="sortTable(0)">Match #</th>
-                        <th class="sortable" onclick="sortTable(1)">Date</th>
-                        <th class="sortable" onclick="sortTable(2)">Stage</th>
+                        <th class="sortable hide-mobile" onclick="sortTable(1)">Date</th>
+                        <th class="sortable hide-mobile" onclick="sortTable(2)">Stage</th>
                         <th class="sortable" onclick="sortTable(3)">Venue</th>
-                        <th class="sortable" onclick="sortTable(4)">Country</th>
-                        <th class="sortable" onclick="sortTable(5)">Stadium</th>
-                        <th class="sortable" onclick="sortTable(6)">Valid Listings</th>
-                        <th class="sortable" onclick="sortTable(7)">Lowest Price</th>
-                        <th class="sortable" onclick="sortTable(8)">Highest Price</th>
-                        <th class="sortable" onclick="sortTable(9)">Marketplace</th>
+                        <th class="sortable hide-tablet" onclick="sortTable(4)">Country</th>
+                        <th class="sortable hide-tablet" onclick="sortTable(5)">Stadium</th>
+                        <th class="sortable hide-mobile" onclick="sortTable(6)">Listings</th>
+                        <th class="sortable" onclick="sortTable(7)">Low Price</th>
+                        <th class="sortable hide-mobile" onclick="sortTable(8)">High Price</th>
+                        <th class="sortable" onclick="sortTable(9)">Link</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -668,15 +739,15 @@ def create_website():
         html_content += f"""
                     <tr class="{row_class}">
                         <td class="match-num">M{match['match_num']}</td>
-                        <td class="date">{match['date']}</td>
-                        <td class="stage">{match['stage']}</td>
-                        <td class="venue">{match['venue']}</td>
-                        <td class="country">{get_venue_country(match['venue'])}</td>
-                        <td>{match['stadium']}</td>
-                        <td class="listings-count">{match['listings_count']}</td>
+                        <td class="date hide-mobile">{match['date']}</td>
+                        <td class="stage hide-mobile">{match['stage']}</td>
+                        <td class="venue">{match['venue']}<div class="venue-mobile-info">{match['date']} • {match['stage']}</div></td>
+                        <td class="country hide-tablet">{get_venue_country(match['venue'])}</td>
+                        <td class="hide-tablet">{match['stadium']}</td>
+                        <td class="listings-count hide-mobile">{match['listings_count']}</td>
                         <td class="price">${match['lowest_price']:,.0f}</td>
-                        <td class="price high">${match['highest_price']:,.0f}</td>
-                        <td><a href="{match['marketplace_url']}" target="_blank" class="marketplace-link">View Listings</a></td>
+                        <td class="price high hide-mobile">${match['highest_price']:,.0f}</td>
+                        <td><a href="{match['marketplace_url']}" target="_blank" class="marketplace-link">View</a></td>
                     </tr>
 """
     
