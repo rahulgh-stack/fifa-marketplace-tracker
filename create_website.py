@@ -679,6 +679,7 @@ def create_website():
 <body>
     <div class="container">
                 <div class="header">
+            <p style="text-align: center; margin: 0 0 20px 0;"><a href="https://coff.ee/rahulxc" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: 600; opacity: 0.9;">☕ Support this project: coff.ee/rahulxc</a></p>
             <h1>🏆 FIFA World Cup 2026 Marketplace</h1>
             <p class="subtitle">Official FIFA Collect RTB (Right to Buy) Collectibles • Real-time marketplace data</p>
             <p class="last-updated">Last updated: {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</p>

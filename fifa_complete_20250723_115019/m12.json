@@ -1,83 +1,84 @@
 {
   "tag": "m12",
   "url": "https://collect.fifa.com/marketplace?tags=m12",
-  "listings_count": 15,
+  "listings_count": 14,
   "listings": [
+    {
+      "tag": "m12",
+      "price": "US$999.00",
+      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nCITY GLORY: MONTERREY\nFrom\nUS$999.00",
+      "type": "Iconic"
+    },
+    {
+      "tag": "m12",
+      "price": "US$900.00",
+      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nCITY GLORY: MONTERREY\nFrom\nUS$900.00",
+      "type": "Iconic"
+    },
     {
       "tag": "m12",
       "price": "US$869.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nCITY GLORY: MONTERREY\nFrom\nUS$869.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$925.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nCITY GLORY: MONTERREY\nFrom\nUS$925.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
-      "type": "Iconic"
-    },
-    {
-      "tag": "m12",
-      "price": "US$799.00",
-      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nCITY GLORY: MONTERREY\nFrom\nUS$799.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$842.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nREWARD PACK THE ART OF FOOTBALL: FOOTBALL IS LIFE IN LATAM\nFrom\nUS$842.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$850.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nSURPRISE PREMIUM - NATIONAL TREASURES PART 2\nFrom\nUS$850.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$1,070.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nCITY GLORY: MONTERREY\nFrom\nUS$1,070.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$1,388.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nRIGHT TO BUY 2 TICKETS\nFrom\nUS$1,388.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$985.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nMEMORABLE PENALTIES - REWARD PACK\nFrom\nUS$985.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$843.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nREWARD PACK - CELEBRATION SNAPSHOTS\nFrom\nUS$843.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
-      "type": "Iconic"
-    },
-    {
-      "tag": "m12",
-      "price": "US$44.00",
-      "text": "NO LONGER VALID - COLLECTIBLE VALID AS RTB FOR 2 TICKETS TO A FIFA CLUB WORLD CUP 2025\u2122 M12 CF MONTERREY VS INTER MILAN\nIconic\nSURPRISE ACROBATIC SKILLS - SERIES 2\nFrom\nUS$44.00",
-      "title": "NO LONGER VALID - COLLECTIBLE VALID AS RTB FOR 2 TICKETS TO A FIFA CLUB WORLD CUP 2025\u2122 M12 CF MONTERREY VS INTER MILAN",
       "type": "Iconic"
     },
     {
       "tag": "m12",
       "price": "US$1,500.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY\nIconic\nSURPRISE PACK - SERIES 1\nFrom\nUS$1,500.00",
-      "title": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREY",
+      "type": "Iconic"
+    },
+    {
+      "tag": "m12",
+      "price": "US$999.00",
+      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREYIconicCITY GLORY: MONTERREYFromUS$999.00",
+      "type": "Iconic"
+    },
+    {
+      "tag": "m12",
+      "price": "US$900.00",
+      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREYIconicCITY GLORY: MONTERREYFromUS$900.00",
       "type": "Iconic"
     },
     {
@@ -85,26 +86,8 @@
       "price": "US$869.00",
       "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREYIconicCITY GLORY: MONTERREYFromUS$869.00",
       "type": "Iconic"
-    },
-    {
-      "tag": "m12",
-      "price": "US$925.00",
-      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREYIconicCITY GLORY: MONTERREYFromUS$925.00",
-      "type": "Iconic"
-    },
-    {
-      "tag": "m12",
-      "price": "US$799.00",
-      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREYIconicCITY GLORY: MONTERREYFromUS$799.00",
-      "type": "Iconic"
-    },
-    {
-      "tag": "m12",
-      "price": "US$842.00",
-      "text": "COLLECTIBLE ALSO VALID AS RTB FOR 2 TICKETS TO M12 MONTERREYIconicREWARD PACK THE ART OF FOOTBALL: FOOTBALL IS LIFE IN LATAMFromUS$842.00",
-      "type": "Iconic"
     }
   ],
   "success": true,
-  "timestamp": "2025-07-23T11:54:22.874267"
+  "timestamp": "2025-07-24T14:21:05.074571"
 }
