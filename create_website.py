@@ -215,7 +215,7 @@ def get_match_schedule():
 def create_website():
     """Create the FIFA marketplace website"""
     
-    data_dir = "fifa_complete_20250723_115019"
+    data_dir = "fifa_marketplace_data"
     matches = []
     
     # Get match schedule data

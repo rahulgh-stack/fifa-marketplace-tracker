@@ -17,7 +17,7 @@ A comprehensive web scraper and data visualization tool for tracking FIFA Collec
 
 ## 🗃️ Dataset
 
-The `fifa_complete_20250723_115019/` directory contains:
+The `fifa_marketplace_data/` directory contains:
 - **104 venue JSON files** (m1.json - m104.json) with marketplace data
 - **1,152+ valid marketplace listings** collected from FIFA Collect
 - **Complete tournament schedule** with venue and stadium information
@@ -33,7 +33,7 @@ The `fifa_complete_20250723_115019/` directory contains:
 
 3. **Run Full Scraper** (if needed):
    ```bash
-   python3 final_scraper.py
+   python3 fifa_scraper.py
    ```
 
 ## 🛠️ Technical Stack
@@ -47,15 +47,12 @@ The `fifa_complete_20250723_115019/` directory contains:
 
 ```
 ├── index.html                          # GitHub Pages main file
-├── fifa_world_cup_2026_marketplace.html # Alternative filename
 ├── create_website.py                   # Website generator
-├── final_scraper.py                    # Complete marketplace scraper
-├── fifa_complete_20250723_115019/      # Complete dataset
-│   ├── m1.json - m104.json            # Individual venue data
-│   └── completion_summary.json         # Scraping metadata
-├── complete_remaining.py               # Range scraper utility
-├── retry_failed_exact.py              # Failed match retry script
-└── requirements.txt                    # Python dependencies
+├── fifa_scraper.py                     # Complete marketplace scraper
+├── fifa_marketplace_data/              # Complete dataset
+│   └── m1.json - m104.json            # Individual venue data (104 files)
+├── requirements.txt                    # Python dependencies
+└── CLEAN_PROJECT_STRUCTURE.md          # Project documentation
 ```
 
 ## 🌍 FIFA World Cup 2026
@@ -80,9 +77,9 @@ The website automatically filters out expired "NO LONGER VALID" listings and dis
 
 ---
 
-**Built with ❤️ for FIFA World Cup 2026 • Last updated: July 23, 2025**
+**Built with ❤️ for FIFA World Cup 2026 • Last updated: July 25, 2025**
 
-## 📊 Dataset: `fifa_complete_20250723_115019/`
+## 📊 Dataset: `fifa_marketplace_data/`
 
 **Status: ✅ COMPLETE** - All 104 venue tags successfully scraped with 1,152+ total listings.
 
@@ -121,19 +118,9 @@ The website automatically filters out expired "NO LONGER VALID" listings and dis
 
 ## 🚀 Usage
 
-### Re-scrape All Tags (m1-m104)
+### Scrape All Tags (m1-m104)
 ```bash
-python3 final_scraper.py
-```
-
-### Re-scrape Specific Range
-```bash
-python3 complete_remaining.py
-```
-
-### Retry Failed Tags Only
-```bash
-python3 retry_failed_exact.py
+python3 fifa_scraper.py
 ```
 
 ## 📦 Installation
@@ -146,28 +133,13 @@ pip3 install playwright
 playwright install chromium
 ```
 
-## 📁 Project Structure
-
-```
-fifa_complete_20250723_115019/    # Complete dataset (105 files)
-├── completion_summary.json       # Scraping summary
-├── m1.json                      # Mexico City venue
-├── m2.json                      # Next venue
-├── ...                          # All venues m1-m104
-└── m104.json                    # New York Finals
-
-Scripts:
-├── final_scraper.py             # Complete scraper (m1-m104)
-├── complete_remaining.py        # Range scraper (m30-m104) 
-└── retry_failed_exact.py        # Retry failed tags
-```
 
 ## 📈 Dataset Statistics
 
 - **Total Venues**: 104 ✅
 - **Total Listings**: 1,152+ 
 - **Success Rate**: 100% (all venues scraped)
-- **Collection Date**: July 23, 2025
+- **Collection Date**: July 25, 2025
 - **Price Range**: US$269 - US$52,700+
 
 ## 🏆 About FIFA Collect
